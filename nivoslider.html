@@ -1,0 +1,31 @@
+<html>
+<head>
+<link rel="stylesheet" href="themes/default/default.css" type="text/css">
+<link rel="stylesheet" href="themes/default/nivo-slider.css" type="text/css">
+<link rel="stylesheet" href="themes/default/style.css" type="text/css">
+</head>
+<body>
+<div id="wrapper">
+<div class="slider-wrapper theme-default">
+<div id="slider" class="nivoSlider"> 
+  <img src="images/toystory.jpg" data-thumb="images/toystory.jpg" /> 
+    <img src="images/up.jpg" data-thumb="images/up.jpg" title="This is an example of a caption"/>
+    <img src="images/walle.jpg" data-thumb="images/walle.jpg" data-transition="slideInLeft" /> 
+    <img src="images/nemo.jpg" data-thumb="images/nemo.jpg" title="#htmlcaption" /> 
+  </div>
+</div>
+</div>
+<script src="jquery.js"></script> 
+<script src="nivoslider.js"></script> 
+<script type="text/javascript">
+        $(window).load(function() {
+        $('#slider').nivoSlider({
+        effect: 'random',
+        animSpeed: 1000,
+        pauseTime: 3000,
+          });
+        });
+
+   </script> 
+</body>
+</html>
